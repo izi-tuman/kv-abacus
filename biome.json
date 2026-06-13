@@ -1,0 +1,54 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.4.7/schema.json",
+	"files": {
+		"includes": [
+			"app/**/*.css",
+			"app/**/*.ts",
+			"app/**/*.tsx",
+			"components/**/*.ts",
+			"components/**/*.tsx",
+			"hooks/**/*.ts",
+			"hooks/**/*.tsx",
+			"lib/**/*.ts",
+			"lib/**/*.tsx",
+			"types/**/*.ts",
+			"scripts/**/*.mjs",
+			"next.config.ts",
+			"postcss.config.mjs",
+			"package.json",
+			"components.json",
+			"biome.json",
+			"!.next",
+			"!node_modules",
+			"!out",
+			"!build",
+			"!coverage",
+			"!PROD2",
+			"!.abacusai",
+			"!.claude"
+		]
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"indentWidth": 2
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"noLabelWithoutControl": "off",
+				"noSvgWithoutTitle": "off"
+			},
+			"complexity": {
+				"noImportantStyles": "off"
+			}
+		}
+	}
+}
